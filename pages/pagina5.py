@@ -4,14 +4,14 @@ import numpy as np
 import plotly.graph_objects as go
 import math
 
-dash.register_page(__name__, path='/campo-vectorial', name='Campo Vectorial 2D')
+dash.register_page(__name__, path='/campo-vectorial', name='Campo Vectorial')
 
 # Layout de la aplicación
 layout = html.Div(children=[  
     html.Div(children=[
         # Contenedor izquierdo - Controles
         html.Div(children=[  
-            html.H1("Campo Vectorial 2D"),
+            html.H1("Campo Vectorial"),
             
             html.Div([
                 html.Div([

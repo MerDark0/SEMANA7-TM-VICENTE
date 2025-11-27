@@ -9,7 +9,6 @@ from styles import INPUT_STYLE_COMPACT, INFO_CARD_STYLE
 
 dash.register_page(__name__, name="PROYECTO 2.2")
 
-# ===== Estilo uniforme para labels =====
 LABEL_STYLE = {
     "color": "#4A4A4A",
     "fontWeight": "600",

@@ -1,0 +1,355 @@
+/* ================== ESTILOS GENERALES ================== */
+#malaria-modelo-completo-container {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #dfe1ee 0%, #ded8e4 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+#malaria-modelo-header {
+    text-align: center;
+    color: #000000;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+#malaria-modelo-description {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    border-left: 5px solid #2E86AB;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* ================== CONTROLES Y FORMULARIOS ================== */
+#malaria-controls-panel {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+#pais-selector-container {
+    margin-bottom: 20px;
+}
+
+#alpha-slider-container, #c-slider-container, #dias-slider-container {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+}
+
+.slider-label {
+    font-weight: bold;
+    margin-right: 10px;
+    color: #495057;
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* ================== BOTONES ================== */
+#simulacion-button {
+    background: linear-gradient(45deg, #2E86AB, #23a6d5);
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(46, 134, 171, 0.3);
+    margin: 20px auto;
+    display: block;
+}
+
+#simulacion-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(46, 134, 171, 0.4);
+    background: linear-gradient(45deg, #23a6d5, #2E86AB);
+}
+
+#simulacion-button:active {
+    transform: translateY(0);
+}
+
+/* ================== RESULTADOS Y MÉTRICAS ================== */
+#resultados-simulacion-container {
+    margin-top: 30px;
+}
+
+.resultados-section {
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#parametros-pais-section {
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+    border-left: 4px solid #2196f3;
+}
+
+#estrategia-section {
+    background: linear-gradient(135deg, #f3e5f5, #e1bee7);
+    border-left: 4px solid #9c27b0;
+}
+
+#resultados-finales-section {
+    background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+    border-left: 4px solid #4caf50;
+}
+
+#interpretacion-section {
+    background: linear-gradient(135deg, #fff3e0, #ffecb3);
+    border-left: 4px solid #ff9800;
+}
+
+/* ================== GRÁFICAS ================== */
+#grafica-simulacion-container, 
+#grafica-comparacion-container, 
+#grafica-paises-container {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border: 1px solid #e0e0e0;
+}
+
+.grafica-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* ================== ANÁLISIS DE SENSIBILIDAD ================== */
+#sensibilidad-container {
+    margin-top: 20px;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#sensibilidad-title {
+    color: #2E86AB;
+    border-bottom: 2px solid #2E86AB;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.sensibilidad-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+.sensibilidad-table th {
+    background: linear-gradient(135deg, #2E86AB, #23a6d5);
+    color: white;
+    padding: 12px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.sensibilidad-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.sensibilidad-table tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.sensibilidad-table tr:hover {
+    background-color: #e3f2fd;
+}
+
+/* ================== ESTADOS Y COLORES ================== */
+.estado-erradicacion {
+    color: #4caf50;
+    font-weight: bold;
+}
+
+.estado-endemia {
+    color: #f44336;
+    font-weight: bold;
+}
+
+.estado-control {
+    color: #ff9800;
+    font-weight: bold;
+}
+
+.metrica-destacada {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #2E86AB;
+}
+
+/* ================== SLIDERS PERSONALIZADOS ================== */
+.rc-slider-track {
+    background: linear-gradient(90deg, #2E86AB, #23a6d5);
+}
+
+.rc-slider-handle {
+    border: 2px solid #2E86AB;
+    background: white;
+    box-shadow: 0 2px 6px rgba(46, 134, 171, 0.3);
+}
+
+.rc-slider-handle:hover {
+    border-color: #23a6d5;
+    box-shadow: 0 2px 8px rgba(35, 166, 213, 0.4);
+}
+
+.rc-slider-mark-text {
+    color: #666;
+    font-size: 12px;
+}
+
+/* ================== DROPDOWN PERSONALIZADO ================== */
+.Select-control {
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+}
+
+.Select-control:hover {
+    border-color: #2E86AB;
+}
+
+.Select-menu-outer {
+    border: 2px solid #2E86AB;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* ================== LOADING ANIMATION ================== */
+#loading-simulacion-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.dash-loading-callback {
+    color: #2E86AB;
+    font-size: 16px;
+}
+
+/* ================== RESPONSIVE DESIGN ================== */
+@media (max-width: 768px) {
+    #malaria-modelo-completo-container {
+        padding: 10px;
+    }
+    
+    #malaria-controls-panel {
+        padding: 15px;
+    }
+    
+    .sensibilidad-table {
+        font-size: 12px;
+    }
+    
+    .sensibilidad-table th,
+    .sensibilidad-table td {
+        padding: 8px 4px;
+    }
+    
+    #simulacion-button {
+        width: 100%;
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    #malaria-modelo-header {
+        font-size: 1.5em;
+    }
+    
+    .resultados-section {
+        padding: 10px;
+    }
+    
+    .grafica-title {
+        font-size: 16px;
+    }
+}
+
+/* ================== ANIMACIONES ================== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-out;
+}
+
+/* ================== BADGES Y ETIQUETAS ================== */
+.badge-pais {
+    background: linear-gradient(45deg, #2E86AB, #23a6d5);
+    color: white;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+.badge-r0 {
+    background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 11px;
+    font-weight: bold;
+}
+
+/* ================== TOOLTIPS PERSONALIZADOS ================== */
+.tooltip-custom {
+    background: #2E86AB !important;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 12px;
+}
+
+.tooltip-custom .rc-slider-tooltip-arrow {
+    border-top-color: #2E86AB !important;
+}
+
+/* ================== SCROLLBAR PERSONALIZADO ================== */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #2E86AB, #23a6d5);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #23a6d5, #2E86AB);
+}

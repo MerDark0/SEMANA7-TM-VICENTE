@@ -3,14 +3,14 @@ from dash import html, dcc, Input, Output, State, callback
 import numpy as np
 import plotly.graph_objects as go
 
-dash.register_page(__name__, path='/modelo-sir', name='Modelo SIR - Epidemiología')
+dash.register_page(__name__, path='/modelo-sir', name='Modelo SIR')
 
 # Layout de la aplicación
 layout = html.Div(children=[  
     html.Div(children=[
         # Contenedor izquierdo - Controles
         html.Div(children=[  
-            html.H1("Modelo SIR - Epidemiología"),
+            html.H1("Modelo SIR"),
             
             html.Div([
                 html.Div([
